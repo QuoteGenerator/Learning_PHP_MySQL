@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="parts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Login & Register</title>
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" alt="Logo" id="logo"></img>
+        <div class="menu">
+            <input type="button" id="homebtn" value="HOME"></input>
+            <input type="button" id="aboutbtn" value="ABOUT"></input>
+        </div>
+    </header>
+
+    <main>
+        <img src="pictures/note_code.png" alt="code_note:" id="codeNote"></img>
+
+        <form action=""></form>
+        <div class="containerRegister" id="containerRegister" style="display: none">
+            <div class="Register">
+                <h1 id="registerTitle">Register</h1><br>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="First Name"></input>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Last Name"></input>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" placeholder="E-Mail"></input>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password"></input>
+                <input type="button" id="registerButton" value="Register"></input>
+            </div>
+            <div id="loginButton">
+                <p id="loginText">Already a boar?</p>
+                <button id="login">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="containerLogin" id="containerLogin" style="display: block">
+            <div class="SignUp">
+                <h1 id="signUpTitle">Sign Up</h1><br>
+                <input type="email" id="email" placeholder="E-Mail"></input><br>
+                <input type="password" id="password" placeholder="Password"></input><br>
+                <input type="number" id="accesKey" placeholder="Code"></input>
+                <input type="button" id="getIntoAccountButton" value="Login"></input>
+            </div>
+            <div id="forgotPassword">
+                <p>Fresh Born?</p>
+                <button id="registerBtn">Create Account</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="storyText">
+        <h2>The Forgotten Farm</h2>
+        <p>
+            It was a website never meant to exist—rumor has it that it was built on the ashes of a farm long abandoned, its memory erased from every map. The farm was said to be a place of unspeakable horrors, where the pigs were not just animals but something... more. Locals whispered about the strange sounds that echoed in the dead of night, pig squeals mixed with something almost human, a sound too unsettling to forget.
+        </p>
+        <p>
+            No one knows who first created the site. Some say it appeared after the last of the old farms inhabitants vanished without a trace. A few careless visitors who stumbled upon the website claimed to see photos, glimpses of the pigs, their eyes hollow, their forms twisted in ways that couldn’t be explained by nature. But the site would vanish from their browser as quickly as it appeared, leaving nothing but a chill and the distinct feeling they had stumbled upon something forbidden.
+        </p>
+        <p>
+            There is a reason no one talks about the farm anymore. Its history has been buried deep—until now. The website you are on is rumored to be connected to the last remnants of that cursed land. The deeper you go, the more you may find, but beware... once you see the truth, it's impossible to unsee.
+        </p>
+        <p>
+            They say the pigs are still out there, watching, waiting for anyone who dares look too closely.
+        </p>
+        <p><em>The question is: will you?</em></p>
+    </div>
+        <p style="font-size: 20px;" id="createdBy">Created by ...</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
