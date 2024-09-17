@@ -18,38 +18,41 @@
     </header>
 
     <main>
-        <img src="pictures/note_code.png" alt="code_note:" id="codeNote"></img>
+        <img src="pictures/note_code.png" alt="code_note" id="codeNote">
 
         <form action=""></form>
+
+        <!-- Register Form -->
         <div class="containerRegister" id="containerRegister" style="display: none">
             <div class="Register">
                 <h1 id="registerTitle">Register</h1><br>
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" placeholder="First Name"></input>
+                <input type="text" id="fname" placeholder="First Name">
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" placeholder="Last Name"></input>
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" placeholder="E-Mail"></input>
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password"></input>
-                <input type="button" id="registerButton" value="Register"></input>
+                <input type="text" id="lname" placeholder="Last Name">
+                <label for="regEmail">E-Mail</label>
+                <input type="email" id="regEmail" placeholder="E-Mail">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" placeholder="Password"><br>
+                <input type="button" id="registerButton" value="Register">
             </div>
-            <div id="loginButton">
-                <p id="loginText">Already a boar?</p>
-                <button id="login">Sign Up</button>
+            <div id="loginSection">
+                <p id="loginText">Already a member?</p>
+                <button id="loginButton">Sign In</button>
             </div>
         </div>
 
+        <!-- Login Form -->
         <div class="containerLogin" id="containerLogin" style="display: block">
             <div class="SignUp">
-                <h1 id="signUpTitle">Sign Up</h1><br>
-                <input type="email" id="email" placeholder="E-Mail"></input><br>
-                <input type="password" id="password" placeholder="Password"></input><br>
-                <input type="number" id="accesKey" placeholder="Code"></input>
-                <input type="button" id="getIntoAccountButton" value="Login"></input>
+                <h1 id="signUpTitle">Sign In</h1><br>
+                <input type="email" id="loginEmail" placeholder="E-Mail"><br>
+                <input type="password" id="loginPassword" placeholder="Password"><br>
+                <input type="number" id="accessKey" placeholder="Access Code"><br>
+                <input type="button" id="getIntoAccountButton" value="Login">
             </div>
-            <div id="forgotPassword">
-                <p>Fresh Born?</p>
+            <div id="CreateNewAccount">
+                <p>New here?</p>
                 <button id="registerBtn">Create Account</button>
             </div>
         </div>
@@ -57,7 +60,7 @@
 
     <footer>
         <div class="storyText">
-        <h2>The Forgotten Farm</h2>
+        <h2 id="storyTextHeading">The Forgotten Farm</h2>
         <p>
             It was a website never meant to exist—rumor has it that it was built on the ashes of a farm long abandoned, its memory erased from every map. The farm was said to be a place of unspeakable horrors, where the pigs were not just animals but something... more. Locals whispered about the strange sounds that echoed in the dead of night, pig squeals mixed with something almost human, a sound too unsettling to forget.
         </p>
@@ -75,5 +78,7 @@
         <p style="font-size: 20px;" id="createdBy">Created by ...</p>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="HideRegisterLogin.js"></script>
+
+<script src="scrollTo.js"></script>
 </html>

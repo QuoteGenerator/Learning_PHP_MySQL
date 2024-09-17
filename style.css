@@ -1,18 +1,22 @@
-*{
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
-    background:black;
+    background: black;
     color: whitesmoke;
     height: 150vh;
     align-items: center;
     flex-direction: column;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,35 +24,33 @@ body{
     width: 100%;
 }
 
-.SignUp, .Register{
+.SignUp, .Register {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: 3px dashed red;
-    padding: 100px
+    padding: 100px;
 }
 
-
-.SignUp input, .Register input{
+.SignUp input, .Register input {
     background: transparent;
     color: red;
     border: 2px solid red;
     margin: 10px;
 }
 
-    
-a{
+a {
     color: red;
 }
 
-img{
+img {
     width: 300px;
     height: 300px;
     display: flex;
 }
 
-#homebtn, #aboutbtn{
+#homebtn, #aboutbtn {
     background: transparent;
     color: red;
     margin: 20px;
@@ -56,7 +58,7 @@ img{
     border: 3px dashed red;
 }
 
-#getIntoAccountButton, #registerButton{
+#getIntoAccountButton, #registerButton {
     background: transparent;
     color: red;
     margin: 20px;
@@ -64,7 +66,7 @@ img{
     border: 3px dashed red;
 }
 
-#getIntoAccountButton:hover, #registerButton:hover{
+#getIntoAccountButton:hover, #registerButton:hover {
     background: transparent;
     color: red;
     cursor: pointer;
@@ -73,7 +75,7 @@ img{
     border: 3px dashed black;
 }
 
-#aboutbtn:hover, #homebtn:hover{
+#aboutbtn:hover, #homebtn:hover {
     background: transparent;
     color: red;
     cursor: pointer;
@@ -82,32 +84,32 @@ img{
     border: 3px dashed black;
 }
 
-#signUpTitle, #registerTitle{
-    color:red;
+#signUpTitle, #registerTitle {
+    color: red;
     font-size: 65px;
 }
 
-#createdBy{
+#createdBy {
     margin: 100px 0px 200px;
 }
 
-#StoryText{
+#StoryText {
     font-size: 30px;
 }
 
-#codeNote{
+#codeNote {
     position: absolute;
-    left:80%;
-    top:100%;
+    left: 80%;
+    top: 100%;
 }
 
-
-#registerBtn, #login{
+/* Corrected IDs */
+#registerBtn, #login {
     color: red;
     background: transparent;
-    border:0;
-}
-#registerBtn:hover, #login:hover{
-    cursor: pointer;
+    border: 0;
 }
 
+#registerBtn:hover, #login:hover {
+    cursor: pointer;
+}
